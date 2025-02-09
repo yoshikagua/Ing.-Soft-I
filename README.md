@@ -41,37 +41,38 @@ Proyecto universitario para desarrollar una plataforma web que permita a los usu
 ---
 
 ## 🚀 Instalación y Uso
-- **Clona el repositorio:**
+**Clona el repositorio:**
 ```
  git clone https://github.com/usuario/proyecto-recetas.git
 ```
 
-- **Instala las dependencias:**
+**Instala las dependencias:**
 
-**Backend (Nest.js):**
-``` cd backend && npm install  
+- **Backend (Nest.js):**
+``` 
+cd backend && npm install  
 ```
 
-**Frontend (Flutter):**
+- **Frontend (Flutter):**
 ```
  cd frontend && flutter pub get  
 ```
 
-- Configura las variables de entorno (backend/.env):
+Configura las variables de entorno (backend/.env):
 ```
  PORT=4000  
  DATABASE_URL=mysql://user:password@localhost:3306/recetas  
  JWT_SECRET=tu_secreto_jwt  
 ```
 
-- Ejecuta el proyecto:
+Ejecuta el proyecto:
 
-**Backend:**
+- **Backend:**
 ```
 npm run start  
 `````
 
-**Frontend:**
+- **Frontend:**
 ```
 flutter run  
 ```
