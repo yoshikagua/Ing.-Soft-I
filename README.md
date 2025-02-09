@@ -1,6 +1,6 @@
-##  Repositorio grupal - Ingeniería de software 1 - 2024-2
+#  Repositorio grupal - Ingeniería de software 1 - 2024-2
 
-# 🍽️ Proyecto de Gestión de Recetas de Cocina
+## 🍽️ Proyecto de Gestión de Recetas de Cocina
 
 - Stiven Aguirre Granada
 - Andrés Felipe Perdomo Uruburu
@@ -8,12 +8,12 @@
 - Manuel Santiago Mori Ardila
 
 
-# 📌 Descripción
+## 📌 Descripción
 Proyecto universitario para desarrollar una plataforma web que permita a los usuarios gestionar y compartir recetas de cocina de manera sencilla. Los usuarios pueden registrarse, crear recetas con imágenes, buscar y filtrar recetas, interactuar con otras publicaciones mediante comentarios y calificaciones, y recibir notificaciones relevantes.
 
 ---
 
-# ✨ Alcance
+## ✨ Alcance
 Funcionalidades Incluidas:
 - Sistema de registro y autenticación.
 - Publicación, edición y eliminación de recetas con imágenes y descripción.
@@ -32,7 +32,7 @@ Funcionalidades Fuera del Alcance:
 
 ---
 
-# ⚙️ Tecnologías Utilizadas
+## ⚙️ Tecnologías Utilizadas
 - Frontend: Flutter
 - Backend: Nest.js
 - Base de Datos: MySQL
@@ -40,7 +40,7 @@ Funcionalidades Fuera del Alcance:
 
 ---
 
-# 🚀 Instalación y Uso
+## 🚀 Instalación y Uso
 - Clona el repositorio:
 // git clone https://github.com/usuario/proyecto-recetas.git
 
@@ -63,11 +63,11 @@ Backend:
 // npm run start  
 
 Frontend:
-// flutter run  
+_ flutter run  
 
 ---
 
-# 📄 Código Limpio y Buenas Prácticas
+## 📄 Código Limpio y Buenas Prácticas
 El proyecto sigue las reglas de Clean Code para mantener el código limpio y fácil de mantener:
 
 - Backend: Uso de ESLint y Prettier para asegurar buenas prácticas.
@@ -75,7 +75,7 @@ El proyecto sigue las reglas de Clean Code para mantener el código limpio y fá
 
 ---
 
-# 🛠️ Arquitectura
+## 🛠️ Arquitectura
 El sistema sigue una arquitectura MVC (Modelo-Vista-Controlador):
 
 - Modelo: Gestiona los datos (recetas, usuarios, comentarios).
@@ -85,7 +85,7 @@ El sistema sigue una arquitectura MVC (Modelo-Vista-Controlador):
 
 ---
 
-# 📚 Patrones de Diseño
+## 📚 Patrones de Diseño
 - MVC: Para separar la lógica de negocio, la presentación y el control del flujo de datos.
 - Repository: Facilita el acceso a la base de datos.
 - Singleton: Garantiza una única instancia para servicios clave (como autenticación).
