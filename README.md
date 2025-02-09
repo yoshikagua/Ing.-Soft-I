@@ -1,4 +1,4 @@
-#  Repositorio grupal - Ingeniería de software 1 - 2024-2
+#  **Repositorio grupal - Ingeniería de software 1 - 2024-2**
 
 ## 🍽️ Proyecto de Gestión de Recetas de Cocina
 
@@ -86,8 +86,8 @@ El sistema sigue una arquitectura MVC (Modelo-Vista-Controlador):
 ---
 
 ## 📚 Patrones de Diseño
-- MVC: Para separar la lógica de negocio, la presentación y el control del flujo de datos.
-- Repository: Facilita el acceso a la base de datos.
-- Singleton: Garantiza una única instancia para servicios clave (como autenticación).
-- Decorator: Añade funcionalidades sin modificar el código original.
+- **MVC:** Para separar la lógica de negocio, la presentación y el control del flujo de datos.
+- **Repository:** Facilita el acceso a la base de datos.
+- **Singleton:** Garantiza una única instancia para servicios clave (como autenticación).
+- **Decorator:** Añade funcionalidades sin modificar el código original.
 
