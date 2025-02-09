@@ -52,7 +52,6 @@ Proyecto universitario para desarrollar una plataforma web que permita a los usu
 ``` 
 cd backend && npm install  
 ```
-
 - **Frontend (Flutter):**
 ```
  cd frontend && flutter pub get  
@@ -71,7 +70,6 @@ Ejecuta el proyecto:
 ```
 npm run start  
 `````
-
 - **Frontend:**
 ```
 flutter run  
