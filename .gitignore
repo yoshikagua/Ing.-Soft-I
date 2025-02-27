@@ -2,7 +2,6 @@
 /dist
 /node_modules
 /build
-/data
 
 # Logs
 logs
@@ -30,11 +29,25 @@ lerna-debug.log*
 *.sublime-workspace
 
 # IDE - VSCode
+
+### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
 # dotenv environment variable files
 .env
@@ -55,4 +68,3 @@ pids
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-.vercel
