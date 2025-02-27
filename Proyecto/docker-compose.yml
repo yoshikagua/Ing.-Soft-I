@@ -1,0 +1,13 @@
+services:
+  db:
+    image: mysql:8.0
+    ports: 
+      - 5432:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_DB: ${MYSQL_DB}
+    volumes:
+      - ./data:/var/lib/mysql/data
+    container_name: mysql_container
