@@ -13,22 +13,22 @@ export class ProfileService extends PrismaClient implements OnModuleInit {
   create(createProfileDto: CreateProfileDto) {
     return this.profile.create({
       data: createProfileDto,
-      });
+    });
   }
 
   findAll() {
-    return `This action returns all profile`;
+    return this.profile.findMany();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} profile`;
+  findOne(id: string) {
+    return this.profile.findFirst({ where: { id } });
   }
 
-  update(id: number, updateProfileDto: UpdateProfileDto) {
-    return `This action updates a #${id} profile`;
+  update(id: string, updateProfileDto: UpdateProfileDto) {
+    return `Profile #${id} update`;
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} profile`;
+  remove(id: string) {
+    return this.profile.delete({ where: { id } }), `Profile #${id} deteted`;
   }
 }
