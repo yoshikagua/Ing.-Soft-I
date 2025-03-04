@@ -1,4 +1,4 @@
-import { Controller, Post, Body, BadRequestException } from '@nestjs/common';
+import { Controller, Post, Body } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { CreateProfileDto } from '../profile/dto/create-profile.dto';
 
@@ -7,8 +7,8 @@ export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
   @Post('register')
-  async register(@Body() CreateProfileDto: CreateProfileDto) {
-    const user = await this.authService.register(CreateProfileDto);
+  async register(@Body() createProfileDto: CreateProfileDto) {
+    const user = await this.authService.register(createProfileDto);
     return { message: 'Usuario registrado exitosamente', user };
   }
 

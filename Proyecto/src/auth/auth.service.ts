@@ -1,12 +1,15 @@
 import { ConflictException, Injectable, UnauthorizedException } from '@nestjs/common';
 import { PrismaClient } from '@prisma/client';
 import * as bcrypt from 'bcrypt';
-import * as jwt from 'jsonwebtoken';
+import { JwtService } from '@nestjs/jwt';
 import { CreateProfileDto } from '../profile/dto/create-profile.dto';
 
 @Injectable()
 export class AuthService extends PrismaClient {
-  private readonly JWT_SECRET = 'secreto';
+  
+  constructor(private readonly jwtService: JwtService) {
+    super();
+  }
 
   async login(email: string, password: string) {
     const user = await this.profile.findFirst({ where: { email } });
@@ -20,11 +23,7 @@ export class AuthService extends PrismaClient {
       throw new UnauthorizedException('Credenciales incorrectas');
     }
 
-    const token = jwt.sign(
-      { id: user.id, email: user.email },
-      this.JWT_SECRET,
-      { expiresIn: '1h' }
-    );
+    const token = this.jwtService.sign({ id: user.id, email: user.email });
 
     return {
       message: 'Login exitoso',
