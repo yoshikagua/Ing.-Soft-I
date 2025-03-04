@@ -25,10 +25,13 @@ export class ProfileService extends PrismaClient implements OnModuleInit {
   }
 
   update(id: string, updateProfileDto: UpdateProfileDto) {
-    return `Profile #${id} update`;
+    return this.profile.update({
+      where: { id },
+      data: updateProfileDto,
+    });
   }
 
   remove(id: string) {
-    return this.profile.delete({ where: { id } }), `Profile #${id} deteted`;
+    return this.profile.delete({ where: { id } });
   }
 }
