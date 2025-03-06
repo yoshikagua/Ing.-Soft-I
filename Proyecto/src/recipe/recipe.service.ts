@@ -5,6 +5,22 @@ import { UpdateRecipeDto } from './dto/update-recipe.dto';
 
 @Injectable()
 export class RecipeService extends PrismaClient implements OnModuleInit {
+  async searchByName(name: string) {
+    return this.recipe.findMany({
+        where: {
+            title: {
+                contains: name.toLowerCase(),  // Busca recetas que contengan el texto en cualquier parte del título
+            },
+        },
+    });
+  }
+
+  async getRecipesByUser(profileId: string) {
+    return this.recipe.findMany({
+      where: { profileId },
+    });
+  }
+
   async onModuleInit() {
     await this.$connect();
   }
