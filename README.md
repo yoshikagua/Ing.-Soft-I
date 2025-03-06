@@ -1,6 +1,6 @@
 #  **Repositorio grupal - Ingeniería de software 1 - 2024-2**
 
-## 🍽️ Proyecto de Gestión de Recetas de Cocina
+## 🍽️ Proyecto de Gestión de Recetas de Cocina "CocinaConectada"
 
 - Stiven Aguirre Granada
 - Andrés Felipe Perdomo Uruburu
