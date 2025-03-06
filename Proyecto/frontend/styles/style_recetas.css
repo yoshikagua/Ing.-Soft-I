@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(100deg, #e1a447, #5bce97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.formulario {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.formulario h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Nombre,
+.Ingredientes,
+.Preparacion,
+.Tiempo,
+.Dificultad {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.Nombre input[type="text"],
+.Ingredientes input[type="text"],
+.Preparacion input[type="text"],
+.Tiempo select,
+.Dificultad select { /* Selector para el select de Dificultad */
+    width: 100%;
+    padding: 20px 10px 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+    height: 45px;
+}
+
+.Nombre input[type="text"]:focus,
+.Ingredientes input[type="text"]:focus,
+.Preparacion input[type="text"]:focus,
+.Tiempo select:focus,
+.Dificultad select:focus { /* Selector para el select de Dificultad */
+    border-color: #007bff;
+}
+
+.Nombre label,
+.Ingredientes label,
+.Preparacion label,
+.Tiempo label,
+.Dificultad label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.Nombre input[type="text"]:focus + label,
+.Ingredientes input[type="text"]:focus + label,
+.Preparacion input[type="text"]:focus + label,
+.Tiempo select:focus + label,
+.Dificultad select:focus + label { /* Selector para el select de Dificultad */
+    top: -15px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+.formulario input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.formulario .registro {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.formulario .registro a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.formulario .registro a:hover {
+    text-decoration: underline;
+}
+
+.Imagen { 
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center; /* Centra el contenido */
+}
+
+#subirImagenBtn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#subirImagenBtn:hover {
+    background-color: #0056b3;
+}
+
+#imagenPreview {
+    margin-top: 10px;
+}

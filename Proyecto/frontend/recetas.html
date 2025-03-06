@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Recetas</title>
+    <link rel="stylesheet" href="/styles/style_recetas.css">
+</head>
+<p id="mensaje"></p>
+<body>
+    <div class="formulario">
+        <h1>Registro de Recetas</h1>
+        <form id = "recetasForm">
+            <div class="Nombre">
+                <input type="text" id = "nombre" name="nombre" required>
+                <label>Nombre de la receta</label>
+            </div>
+            <div class="Ingredientes">
+                <input type="text" id = "ingredientes" name="ingredientes" required>
+                <label>Ingredientes</label>
+            </div>
+            <div class="Preparacion">
+                <input type="text" id = "preparacion" name="preparacion" required>
+                <label>Preparacion</label>
+            </div>
+            <div class="Tiempo">
+                <select name="tiempo">
+                    <option value="5 min">5 min</option>
+                    <option value="10 min">10 min</option>
+                    <option value="15 min">15 min</option>
+                    <option value="30 min">30 min</option>
+                    <option value="1 hora">1 hora</option>
+                    <option value="1 hora 30 min">1 hora 30 min</option>
+                    <option value="2 horas">2 horas</option>
+                    <option value="+2 horas">+2 horas</option>
+                </select>
+                <label>Tiempo de preparacion</label>
+            </div>
+            <div class="Dificultad">
+                <select id = "nivel" name="dificultad">
+                    <option value="facil">Facil</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="dificil">Dificil</option>
+                </select>
+                <label>Dificultad</label>
+            </div>
+            <div class="Imagen"> 
+                <input type="file" id="imagenInput" name="imagen" accept="image/*" style="display: none;"> 
+                <button type="button" id="subirImagenBtn">Subir imagen</button>
+                <div id="imagenPreview"></div>
+            </div>
+            <input type="submit" value="Registrar receta">
+        </form>
+    </div>
+    <script src="/scripts/recipes.js" defer></script>
+</body>
+</html>

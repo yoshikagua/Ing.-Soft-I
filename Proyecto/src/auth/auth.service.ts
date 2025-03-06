@@ -26,13 +26,7 @@ export class AuthService extends PrismaClient {
     const token = this.jwtService.sign({ id: user.id, email: user.email });
 
     return {
-      message: 'Login exitoso',
-      token,
-      user: {
-        id: user.id,
-        name: user.name,
-        email: user.email,
-      },
+      access_token: this.jwtService.sign({ id: user.id, email: user.email }),
     };
   }
   async register(createProfileDto: CreateProfileDto) {
